@@ -1,0 +1,2 @@
+module ClaimFilesHelper
+end
