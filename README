@@ -1,3 +1,25 @@
+=== Liens Resolved Services ===
+
+A web based tool to track, manage and resolve liens against workers' comp
+claim files.
+
+Features:
+  1)  Stores claim file and lien claiment data.
+  2)  Cross indexex by claim file and by line claiment.
+
+Benefits:
+  1)  Identifies total lien amounts, grand, by claim file, by lien claiment.
+  2)  Reduced requirement for reserves.
+  3)  Facilitates negotiation with lien claiment across claim file base.
+
+
+=== DEVELOPMENT ===
+
+http://freezing-summer-625.heroku.com/ | git@heroku.com:freezing-summer-625.git
+
+
+=== DEPRECATED ===
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
