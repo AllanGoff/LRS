@@ -1,11 +1,27 @@
 require 'spec_helper'
 
 describe ClaimFilesController do
+  render_views
+
+  describe "GET 'home'" do
+    it "should be successful" do
+      get 'home'
+      response.should be_success
+    end
+    it "should have the right title" do
+      get 'home'
+      response.should have_selector("title", :content=>"ClaimFiles | Home")
+    end
+  end
 
   describe "GET 'new'" do
     it "should be successful" do
       get 'new'
       response.should be_success
+    end
+    it "should have the right title" do
+      get 'new'
+      response.should have_selector("title", :content=>"ClaimFiles | New")
     end
   end
 

@@ -1,16 +1,11 @@
 RailsLRS::Application.routes.draw do
+  get "claim_files/home"
   get "claim_files/new"
-
   get "claim_files/save"
-
   get "claim_files/find"
-
   get "claim_files/edit"
-
   get "claim_files/delete"
-
   get "claim_files/show"
-
   get "claim_files/list"
 
   # The priority is based upon order of creation:
