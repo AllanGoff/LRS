@@ -10,7 +10,7 @@ describe ClaimFilesController do
     end
     it "should have the right title" do
       get 'home'
-      response.should have_selector("title", :content=>"ClaimFiles | Home")
+      response.should have_selector("title", :content=>"LRS:ClaimFiles | Home")
     end
   end
 
@@ -21,7 +21,7 @@ describe ClaimFilesController do
     end
     it "should have the right title" do
       get 'new'
-      response.should have_selector("title", :content=>"ClaimFiles | New")
+      response.should have_selector("title", :content=>"LRS:ClaimFiles | New")
     end
   end
 

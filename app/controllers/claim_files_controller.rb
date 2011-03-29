@@ -1,10 +1,10 @@
 class ClaimFilesController < ApplicationController
   def home
-    @title = "ClaimFiles | Home"
+    @title = "Home"
   end
 
   def new
-    @title = "ClaimFiles | New"
+    @title = "New"
   end
 
   def save
