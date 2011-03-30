@@ -1,11 +1,16 @@
 RailsLRS::Application.routes.draw do
-  get "pages/home"
-  get "pages/claims"
-  get "pages/liens"
-  get "pages/reports"
+#  get "pages/home"
+  match '/claims',  :to => 'claim_files#home'
+  match '/liens',   :to => 'pages#liens'
+  match '/reports', :to => 'pages#reports'
+#  get "pages/claims"
+#  get "pages/liens"
+#  get "pages/reports"
 
-  get "claim_files/home"
-  get "claim_files/new"
+#  get "claim_files/home"
+  match '/home',  :to => 'claim_files#home'
+  match '/new',  :to => 'claim_files#new'
+#  get "claim_files/new"
   get "claim_files/save"
   get "claim_files/find"
   get "claim_files/edit"
