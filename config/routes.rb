@@ -1,4 +1,9 @@
 RailsLRS::Application.routes.draw do
+  get "pages/home"
+  get "pages/claims"
+  get "pages/liens"
+  get "pages/reports"
+
   get "claim_files/home"
   get "claim_files/new"
   get "claim_files/save"
@@ -7,6 +12,8 @@ RailsLRS::Application.routes.draw do
   get "claim_files/delete"
   get "claim_files/show"
   get "claim_files/list"
+
+  root :to => "pages#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
