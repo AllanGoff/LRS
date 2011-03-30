@@ -1,6 +1,6 @@
 class ClaimFilesController < ApplicationController
   def home
-    @title = "Home"
+    @title = "Home san"
   end
 
   def new
