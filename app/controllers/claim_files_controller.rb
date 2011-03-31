@@ -3,6 +3,10 @@ class ClaimFilesController < ApplicationController
     @service_title = "ClaimFiles"
     @title = "Home"
   end
+  
+  def show
+    @claim = ClaimFile.find(params[:id])
+  end
 
   def new
     @service_title = "ClaimFiles"

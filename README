@@ -12,7 +12,62 @@ Benefits:
   2)  Reduced requirement for reserves.
   3)  Facilitates negotiation with lien claiment across claim file base.
 
+ClaimFiles DB:
+  Claim Number (key)			[ string ]
+  Employee (EE)					[ string ]
+  Applicant Attorney (AA)		[ string ]
+  Defense Attorney (DA)			[ string ]
+  Date of Injury (DOI)			[ datetime ]
+  Adjuster						[ string ]
+  Case in Chief Settled			[ datetime ]
 
+LienClaiments DB:
+  Lien Claiment (LC) (key)		[ string ] (combined key)
+  Tax ID Number (key)			[ string ] (1 & 3)
+  Claim Number (key)			[ string ] (2 & 3)
+  Disputed Amount				[ integer ] (integer cents)
+  Dates of Service (DOS)		[ datetime ]
+  Previously Paid				[ integer ] (integer cents)
+  Dispute Reason				[ string ]
+  Lien Settled Amount			[ integer ] (integer cents)
+  Lien Filed					[ boolean ]
+  Notes							[ text ]
+  
+CF_to_LC DB:
+  Claim Number (key)			[ string ]
+  Lien Claiment (LC)			[ string ]
+ 
+LC_to_CF DB:
+  Lien Claiment (LC) (key)		[ string ]
+  Tax ID Number (key)			[ string ]
+  Claim Number  				[ string ]
+
+EE_Address DB:
+  Employee (EE) (key)			[ string ]
+  AddressID  					[ integer ]
+
+AA_Address DB:
+  Applicant Attorney (AA) (key)	[ string ]
+  AddressID  					[ integer ]
+
+DA_Address DB:
+  Defense Attorney (DA) (key)	[ string ]
+  AddressID  					[ integer ]
+
+LC_Address DB:
+  Lien Claiment (LC) (key)		[ string ]
+  Tax ID Number (key)			[ string ]
+  AddressID  					[ integer ]
+
+Address
+  id (key)						[ integer ]
+  Address1						[ string ]
+  Address2						[ string ]
+  Address3						[ string ]
+  City							[ string ]
+  State							[ string ]
+  Zip							[ string ]
+  
 === DEVELOPMENT ===
 
 http://freezing-summer-625.heroku.com/ | git@heroku.com:freezing-summer-625.git
