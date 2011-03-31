@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe PagesController do
+  render_views
 
   describe "GET 'home'" do
     it "should be successful" do
@@ -16,12 +17,12 @@ describe PagesController do
 #    end
 #  end
 
-  describe "GET 'liens'" do
-    it "should be successful" do
-      get 'liens'
-      response.should be_success
-    end
-  end
+#  describe "GET 'liens'" do
+#    it "should be successful" do
+#      get 'liens'
+#      response.should be_success
+#    end
+#  end
 
   describe "GET 'reports'" do
     it "should be successful" do

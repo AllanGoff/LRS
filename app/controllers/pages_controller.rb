@@ -1,14 +1,16 @@
 class PagesController < ApplicationController
   def home
+    @service_title = "Home"
   end
 
-  def claims
+  def claims  # Unused.
   end
 
-  def liens
+  def liens  # Unused.
   end
 
   def reports
+    @service_title = "Reports"
   end
 
 end

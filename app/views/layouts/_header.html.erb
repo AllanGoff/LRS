@@ -2,9 +2,12 @@
 	<%= image_tag("LRS_logo.png", :alt => "Sample App", :class => "round") %>
     <nav class="round">
       <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Help", '#' %></li>
-        <li><%= link_to "Sign in", '#' %></li>
+        <li><%= link_to "Home", 			root_path %></li>
+ 		<li><%= link_to "Claim Files",		claims_path %></li>
+		<li><%= link_to "Lien Claiments",	liens_path %></li>
+		<li><%= link_to "Reports",			reports_path %></li>
+        <li><%= link_to "Help", 			'#' %></li>
+        <li><%= link_to "Sign in", 			'#' %></li>
       </ul>
     </nav>
 </header>

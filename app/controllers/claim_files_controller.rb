@@ -1,9 +1,11 @@
 class ClaimFilesController < ApplicationController
   def home
+    @service_title = "ClaimFiles"
     @title = "Home"
   end
 
   def new
+    @service_title = "ClaimFiles"
     @title = "New"
   end
 
