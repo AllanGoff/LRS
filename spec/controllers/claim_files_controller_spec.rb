@@ -12,6 +12,10 @@ describe ClaimFilesController do
       get 'home'
       response.should have_selector("title", :content=>"LRS:ClaimFiles | Home")
     end
+    it "should have a find button" do
+      get 'home'
+      response.should have_selector("a", :content=>"Find Claim File")
+    end
   end
 
   describe "GET 'new'" do

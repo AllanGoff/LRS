@@ -12,6 +12,10 @@ describe LiensController do
       get 'home'
       response.should have_selector("title", :content=>"LRS:LienClaiments | Home")
     end
+    it "should have a find button" do
+      get 'home'
+      response.should have_selector("a", :content=>"Find Lien Claiment")
+    end
   end
   
   describe "GET 'new'" do
