@@ -8,30 +8,13 @@ class LiensController < ApplicationController
     @service_title = "LienClaiments"
     @title = "New"
   end
-
   def find
     @service_title = "LienClaiments"
     @title = "Find"
   end
-
   def list
     @service_title = "LienClaiments"
     @title = "List"
-  end
-
-  def edit
-    @service_title = "LienClaiments"
-    @title = "Edit"
-  end
-
-  def save
-    @service_title = "LienClaiments"
-    @title = "Save"
-  end
-
-  def delete
-    @service_title = "LienClaiments"
-    @title = "Delete"
   end
 
   def submit
@@ -42,9 +25,23 @@ class LiensController < ApplicationController
     @service_title = "LienClaiments"
     @title = "Cancel"
   end
+
   def update
     @service_title = "LienClaiments"
     @title = "Update"
+  end
+  def delete
+    @service_title = "LienClaiments"
+    @title = "Delete"
+  end
+
+  def edit
+    @service_title = "LienClaiments"
+    @title = "Edit"
+  end
+  def show
+    @service_title = "LienClaiments"
+    @title = "Show"
   end
 
 end

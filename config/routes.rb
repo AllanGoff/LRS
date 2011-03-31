@@ -7,26 +7,33 @@ RailsLRS::Application.routes.draw do
   match '/home',  :to => 'claim_files#home'
   #  get "claim_files/home"
   get "claim_files/new"
-  get "claim_files/save"
   get "claim_files/find"
-  get "claim_files/edit"
-  get "claim_files/delete"
-  get "claim_files/show"
   get "claim_files/list"
+
+  get "claim_files/submit"
+  get "claim_files/cancel"
+
+  get "claim_files/update"
+  get "claim_files/delete"
+
+  get "claim_files/edit"
+  get "claim_files/show"
 
   match '/home',  :to => 'liens#home'
   #  get "liens/home"
   get "liens/new"
-  get "liens/save"
   get "liens/find"
-  get "liens/edit"
-  get "liens/delete"
-  get "liens/show"
   get "liens/list"
 
   get "liens/submit"
   get "liens/cancel"
+
   get "liens/update"
+  get "liens/delete"
+
+  get "liens/edit"
+  get "liens/show"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

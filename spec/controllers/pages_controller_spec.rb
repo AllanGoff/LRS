@@ -10,20 +10,6 @@ describe PagesController do
     end
   end
 
-#  describe "GET 'claims'" do       # Convert to integration test?
-#    it "should be successful" do
-#      get 'claims'
-#      response.should be_success
-#    end
-#  end
-
-#  describe "GET 'liens'" do
-#    it "should be successful" do
-#      get 'liens'
-#      response.should be_success
-#    end
-#  end
-
   describe "GET 'reports'" do
     it "should be successful" do
       get 'reports'

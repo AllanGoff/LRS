@@ -8,23 +8,40 @@ class ClaimFilesController < ApplicationController
     @service_title = "ClaimFiles"
     @title = "New"
   end
-
-  def save
+  def find
+    @service_title = "ClaimFiles"
+    @title = "Find"
+  end
+  def list
+    @service_title = "ClaimFiles"
+    @title = "List"
   end
 
-  def find
+  def submit
+    @service_title = "ClaimFiles"
+    @title = "Submit"
+  end
+  def cancel
+    @service_title = "ClaimFiles"
+    @title = "Cancel"
+  end
+
+  def update
+    @service_title = "ClaimFiles"
+    @title = "Update"
+  end
+  def delete
+    @service_title = "ClaimFiles"
+    @title = "Delete"
   end
 
   def edit
+    @service_title = "ClaimFiles"
+    @title = "Edit"
   end
-
-  def delete
-  end
-
   def show
-  end
-
-  def list
+    @service_title = "ClaimFiles"
+    @title = "Show"
   end
 
 end
